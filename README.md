@@ -1,86 +1,53 @@
-Tugas 2 - Konsep Inheritance dan Interface dalam Java
-Deskripsi Singkat
+# **Tugas 2 - Konsep Inheritance & Interface dalam Java**
 
-Proyek ini mendemonstrasikan penerapan konsep inheritance dan interface dalam bahasa pemrograman Java. Studi kasus yang digunakan adalah entitas Idol yang memiliki beberapa peran atau "kepribadian", yaitu:
+## **Deskripsi Singkat**
+Yo guys! 😎  
+Proyek ini nunjukin **cara pakai inheritance dan interface** di Java. Studi kasusnya tentang **Idol** yang punya beberapa peran sekaligus:
 
-Mahasiswa
+- *Mahasiswa* 🎓  
+- *Penjual Baju* 👗  
+- *Sandwich Generation* 💸  
 
-Penjual baju
+Selain identitas dasarnya sebagai **Manusia**.
 
-Sandwich Generation
+---
 
-Selain dari identitas dasarnya sebagai Manusia.
+## **Struktur Proyek**
+Proyek ini punya **5 file Java** yang saling nyambung:
 
-Struktur Proyek
+1. **Manusia.java**  
+   *Superclass* yang nyimpen properti dasar tiap manusia, kayak `warnaKulit` & `statusHubungan`.
 
-Proyek ini terdiri dari lima file Java yang saling berhubungan:
+2. **Mahasiswa.java**  
+   *Interface* buat perilaku mahasiswa, contohnya:  
+   - `mengerjakanTugasIndividu()`  
+   - `mengerjakanTugasHimpunan()`  
+   - `mengerjakanTugasKelompok()`
 
-Manusia.java
-Superclass yang berisi properti dasar yang dimiliki setiap manusia, seperti warnaKulit dan statusHubungan.
+3. **PenjualBaju.java**  
+   *Interface* buat perilaku jualan baju:  
+   - `membuatDesainBaju()`  
+   - `memilihKain()`  
+   - `memasarkanProduk()`
 
-Mahasiswa.java
-Interface yang mendefinisikan perilaku yang berkaitan dengan kehidupan seorang mahasiswa, seperti:
+4. **SandwichGeneration.java**  
+   *Interface* buat tanggung jawab finansial:  
+   - `memberiUangKeOrtu()`  
+   - `memberiUangKeAdik()`  
+   - `memberiUangKeKerabat()`
 
-mengerjakanTugasIndividu()
+5. **Idol.java**  
+   *Subclass utama* yang:  
+   - Mewarisi properti dari **Manusia**  
+   - Implement semua method dari interface **Mahasiswa**, **PenjualBaju**, & **SandwichGeneration**
 
-mengerjakanTugasHimpunan()
+---
 
-mengerjakanTugasKelompok()
+## **Cara Menjalankan Program**
+1. Pastikan semua file (`Idol.java`, `Manusia.java`, `Mahasiswa.java`, `PenjualBaju.java`, `SandwichGeneration.java`) ada di **satu folder** & package yang sama: `tugas2`.
 
-PenjualBaju.java
-Interface yang mendefinisikan perilaku terkait peran sebagai penjual baju, seperti:
+2. Buka terminal / cmd.
 
-membuatDesainBaju()
+3. Pindah ke direktori tempat file disimpan.
 
-memilihKain()
-
-memasarkanProduk()
-
-SandwichGeneration.java
-Interface yang mendefinisikan tanggung jawab finansial seorang sandwich generation, seperti:
-
-memberiUangKeOrtu()
-
-memberiUangKeAdik()
-
-memberiUangKeKerabat()
-
-Idol.java
-Subclass utama yang:
-
-Mewarisi properti dari Manusia
-
-Mengimplementasikan semua metode dari interface Mahasiswa, PenjualBaju, dan SandwichGeneration
-
-Cara Menjalankan Program
-
-Pastikan semua file (Idol.java, Manusia.java, Mahasiswa.java, PenjualBaju.java, SandwichGeneration.java) berada dalam satu direktori dan package yang sama, yaitu tugas2.
-
-Buka terminal atau command prompt.
-
-Pindah ke direktori tempat file disimpan.
-
-Kompilasi semua file Java:
-
-javac tugas2/*.java
-
-
-Jalankan program:
-
-java tugas2.Idol
-
-Output Program
-
-Setelah dijalankan, program akan menampilkan properti dan aksi dari objek Idol, sebagai berikut:
-
-Warna kulit: Putih
-Punya pasangan: Nayeon belum punya pasangan
-Mengerjakan tugas individu.
-Mengerjakan tugas himpunan mahasiswa.
-Mengerjakan tugas kelompok.
-Membuat desain baju.
-Memilih kain untuk baju.
-Memasarkan produk baju.
-Memberi uang ke orang tua.
-Memberi uang ke adik.
-Memberi uang ke kerabat.
+4. **Kompilasi semua file**:
